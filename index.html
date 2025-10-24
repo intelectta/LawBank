@@ -1,1 +1,71 @@
-LawBank.org
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LawBank</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<style>
+body {
+  background: linear-gradient(135deg, #eef3ff, #dce8ff);
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 160px);
+  grid-gap: 35px;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Botões principais */
+.btn {
+  width: 140px;
+  height: 140px;
+  border: none;
+  border-radius: 16px;
+  font-size: 20px;
+  font-weight: 600;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s, box-shadow 0.3s;
+}
+.btn i {
+  font-size: 36px;
+  margin-bottom: 8px;
+}
+.btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* Cores */
+.btn-ler { background: #4a90e2; }
+.btn-criar { background: #27ae60; }
+.btn-buscar { background: #9b59b6; }
+.btn-comparar { background: #f39c12; }
+.btn-relatorio { background: #e74c3c; }
+.btn-config { background: #2c3e50; }
+</style>
+</head>
+<body>
+
+<div class="grid">
+  <button class="btn btn-ler"><i class="fa-solid fa-book-open"></i>Ler Leis</button>
+  <button class="btn btn-criar"><i class="fa-solid fa-plus"></i>Criar Leis</button>
+  <button class="btn btn-buscar"><i class="fa-solid fa-magnifying-glass"></i>Buscar</button>
+  <button class="btn btn-comparar"><i class="fa-solid fa-scale-balanced"></i>Comparar</button>
+  <button class="btn btn-relatorio"><i class="fa-solid fa-file-lines"></i>Relatório</button>
+  <button class="btn btn-config"><i class="fa-solid fa-gear"></i>Configurar</button>
+</div>
+
+</body>
+</html>
